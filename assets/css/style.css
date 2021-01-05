@@ -113,10 +113,10 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
-    background: #00a6eb;
+    background: #fff;
   }
   #header.header-scrolled, #header .header-container {
-    background: #00a6eb;
+    background: #fff;
   }
   #header .logo h1 {
     font-size: 24px;
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #00a6eb;
 }
 
 .mobile-nav {
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") center center;
+  /* background: url("../img/hero-bg.jpg") center center; */
   background-size: cover;
   position: relative;
 }
@@ -1192,14 +1192,17 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f6f6f7;
+  background: #00a6eb;
   margin-top: 100px;
 }
-
+.breadcrumbs a{
+  color: #fff;
+}
 .breadcrumbs h2 {
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+  color: #fff;
 }
 
 .breadcrumbs ol {
@@ -1472,4 +1475,57 @@ section {
   background: #00805d;
   color: #fff;
   text-decoration: none;
+}
+#hero .get-started-icon {
+  font-size: 22px;
+  background: #00a6eb;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -15px;
+  padding: 5px 27px 5px 27px;
+  color: #fff;
+  background: #636464;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+  text-transform: capitalize;
+  top:-4px;
+}
+.slideCss{
+  left:100px;
+}
+#header .logo {
+  overflow: hidden;
+  padding: 10px 30px 6px 30px;
+  background: none;
+}
+.keyskills a{color: #00cc95;text-decoration: none;}
+.applyBtn{ padding: 5px 15px; border-radius: 3px; background: #00cc95; border: 1px solid #00cc95; font-weight: bold;}
+@media only screen and (max-width: 600px) {
+  .slideCss {
+    left:0;
+  }
+  #hero{height: 80vh;}
+  .video-shell{height: 90vh;}
+  .breadcrumbs{display: none;}
+  .mobnone{display: none;}
+  .jobsSearch .cta{padding: 80px 0px 0px 0px;}
+  .jobsSearch .services .container{padding-left: 0px;padding-right: 0px;}
+  .jobsSearch .services{padding: 5px 0px;}
+  .jobsSearch .services .icon-box, .iconslist{display: block !important;}
+  .iconslist{display: block !important;}
+  .iconslist .col-md-6{margin-bottom: 20px;}
+
 }
